@@ -7,15 +7,22 @@ body{
 header{
     color: #06002C;
     background-color: #FFFADE;
-    height: 460vh;
-    padding-top: 20px;
+    height: 482vh;
+}
+
+header.project{
+    height: 378vh;
 }
 
 .project{
     color: #06002C;
     background-color: #FFFADE;
     height: 370vh;
-    padding-top: 20px;
+}
+
+.name{
+    font-weight: 100;
+    padding-bottom: 3px;
 }
 
 ul{
@@ -28,7 +35,7 @@ header a{
 }
 
 header a:hover{
-    color: #00C897;
+    color: #7e72cb;
 }
 
 header h3, h4{
@@ -45,10 +52,6 @@ header h3, h4{
 
 .card-img-top{
     background-color: #06002C;
-}
-
-#about-me{
-
 }
 
 .about-img{
@@ -71,17 +74,6 @@ header h3, h4{
 
 .about-img2 img{
     width: 100%;
-}
-
-#experience{
-
-}
-
-#knowledge{
-
-}
-#education{
-
 }
 
 .social-media a i{
@@ -119,7 +111,7 @@ header h3, h4{
 }
 
 .card:hover{
-    background-color: #00C897;
+    background-color: #b0a4ff;
 }
 
 
@@ -149,3 +141,35 @@ header h3, h4{
 .sections{
     margin-top: 10%;
 }
+
+.text-about-me{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media (min-width: 1500px) {
+    #img-surfer {
+        background-image: url(img/front-surfers.png);
+        background-size: 100% 100%;
+        height: 312px;
+    }
+
+    #img-news{
+        background-image: url('img/front-news.png');
+        background-size: 100% 100%;
+        height: 312px;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    .header{
+        display: none;
+    }
+
+    .col-9{
+        width: 100%;
+    }
+}
+
